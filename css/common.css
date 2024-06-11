@@ -1,0 +1,864 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, hr, p, figure {
+    display: block;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    border-width: 0;
+    opacity: 1;
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: block;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    align-items: normal;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.sticking {
+    margin: 0 !important;
+    z-index: 10000 !important;
+}
+
+@media (max-width: 99999px) {
+    .max\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .xxxl\:show {
+        display: none;
+    }
+
+    .xxl\:show {
+        display: none;
+    }
+
+    .xl\:show {
+        display: none;
+    }
+
+    .lg\:show {
+        display: none;
+    }
+
+    .md\:show {
+        display: none;
+    }
+
+    .sm\:show {
+        display: none;
+    }
+
+    .xs\:show {
+        display: none;
+    }
+
+    .xxs\:show {
+        display: none;
+    }
+
+    .tn\:show {
+        display: none;
+    }
+
+    .max\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 2999px) {
+    .xxxl\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .xxxl\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 1919px) {
+    .xxl\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .xxl\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 1399px) {
+    .xl\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .xl\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .lg\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lg\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .md\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .md\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .sm\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sm\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .xs\:show {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .xs\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .xxs\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .xxs\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 384px) {
+    .tn\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tn\:hide {
+        display: none;
+    }
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style: normal;
+    src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+    src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0")
+        format("embedded-opentype"),
+      url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0")
+        format("woff2"),
+      url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0")
+        format("woff"),
+      url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0")
+        format("truetype"),
+      url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular")
+        format("svg");
+  }
+
+.headroom {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+    transform: translateY(0%);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+.mob.root {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 1540px;
+    background-color: whitesmoke;
+    overflow: hidden;
+  }
+  .mob .rect {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 1488px;
+    left: 0px;
+    width: 390px;
+    height: 52px;
+    background-color: #b42318;
+  }
+  .mob .image {
+    position: absolute;
+    top: 13px;
+    right: 277px;
+    bottom: 1501px;
+    left: 18px;
+    width: 95px;
+    height: 26px;
+  }
+  .mob .image1 {
+    position: absolute;
+    top: 13px;
+    right: 92px;
+    bottom: 1507px;
+    left: 278px;
+    width: 20px;
+    height: 20px;
+  }
+  .mob .image11 {
+    position: absolute;
+    top: 13px;
+    right: 55px;
+    bottom: 1507px;
+    left: 315px;
+    width: 20px;
+    height: 20px;
+  }
+  .mob .image12 {
+    position: absolute;
+    top: 13px;
+    right: 18px;
+    bottom: 1507px;
+    left: 352px;
+    width: 20px;
+    height: 20px;
+  }
+  .mob .big_title_box {
+    position: absolute;
+    top: 79px;
+    right: 57px;
+    bottom: 1374px;
+    left: 57px;
+    display: flex;
+    justify-content: center;
+    width: 276px;
+    height: 87px;
+  }
+  .mob .big_title {
+    font: 700 36px/1.2 "Roboto", Helvetica, Arial, serif;
+    color: black;
+    text-align: center;
+  }
+  .mob .big_title_span0 {
+    font: 700 1em/1.2 "Roboto", Helvetica, Arial, serif;
+    color: #b42318;
+  }
+  .mob .big_title_span1 {
+    font: 700 1em/1.2 "Roboto", Helvetica, Arial, serif;
+  }
+  .mob .desc {
+    position: absolute;
+    top: 182px;
+    right: 57px;
+    bottom: 1304px;
+    left: 57px;
+    display: flex;
+    justify-content: center;
+    width: 276px;
+    height: 54px;
+    font: 400 12px/1.5 "Roboto", Helvetica, Arial, serif;
+    color: black;
+    text-align: center;
+  }
+  .mob .rect1 {
+    position: absolute;
+    top: 1491px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 390px;
+    height: 49px;
+    background-color: #b42318;
+  }
+  .mob .image2 {
+    position: absolute;
+    top: 1501px;
+    right: 288px;
+    bottom: 9px;
+    left: 20px;
+    width: 82px;
+    height: 30px;
+  }
+  .mob .info {
+    position: absolute;
+    top: 1508px;
+    right: 20px;
+    bottom: 17px;
+    left: 240px;
+    width: 130px;
+    height: 15px;
+    font: 600 10px/1.5 "Roboto", Helvetica, Arial, serif;
+    color: white;
+  }
+  .mob .info1 {
+    position: absolute;
+    top: 1508px;
+    right: 162px;
+    bottom: 17px;
+    left: 166px;
+    width: 62px;
+    height: 15px;
+    font: 600 10px/1.5 "Roboto", Helvetica, Arial, serif;
+    color: white;
+    letter-spacing: -0.1px;
+  }
+  .mob .info2 {
+    position: absolute;
+    top: 1508px;
+    right: 235px;
+    bottom: 17px;
+    left: 135px;
+    width: 20px;
+    height: 15px;
+    font: 600 10px/1.5 "Roboto", Helvetica, Arial, serif;
+    color: white;
+  }
+  .mob .rect2 {
+    position: absolute;
+    top: 276px;
+    right: 18px;
+    bottom: 694px;
+    left: 18px;
+    width: 354px;
+    height: 570px;
+    background-color: white;
+    border-radius: 25px 25px 25px 25px;
+    outline: 1px solid black;
+    outline-offset: -1px;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.2470588235);
+  }
+  .mob .image3 {
+    position: absolute;
+    top: 299px;
+    right: 40px;
+    bottom: 1051px;
+    left: 40px;
+    width: 310px;
+    height: 190px;
+    outline: 1px solid rgba(0, 0, 0, 0.368);
+    outline-offset: -1px;
+  }
+  .mob .rect3 {
+    position: absolute;
+    top: 503px;
+    right: 264px;
+    bottom: 1015px;
+    left: 40px;
+    width: 86px;
+    height: 22px;
+    background-color: #4c67c6;
+  }
+  .mob .info11 {
+    position: absolute;
+    top: 507px;
+    right: 270px;
+    bottom: 1019px;
+    left: 44px;
+    width: 76px;
+    height: 14px;
+    font: 500 12px/1.16 "Inter", Helvetica, Arial, serif;
+    color: white;
+  }
+  .mob .subtitle {
+    position: absolute;
+    top: 540px;
+    right: 144px;
+    bottom: 977px;
+    left: 40px;
+    width: 206px;
+    height: 23px;
+    font: 500 20px/1.14 "Inter", Helvetica, Arial, serif;
+    color: black;
+  }
+  .mob .desc1 {
+    position: absolute;
+    top: 577px;
+    right: 40px;
+    bottom: 855px;
+    left: 40px;
+    width: 310px;
+    height: 108px;
+    font: 400 12px/1.5 "Inter", Helvetica, Arial, serif;
+    color: black;
+    text-align: justify;
+  }
+  .mob .image4 {
+    position: absolute;
+    top: 701px;
+    right: 338px;
+    bottom: 827px;
+    left: 40px;
+    width: 12px;
+    height: 12px;
+  }
+  .mob .image41 {
+    position: absolute;
+    top: 730px;
+    right: 337px;
+    bottom: 798px;
+    left: 41px;
+    width: 12px;
+    height: 12px;
+  }
+  .mob .image42 {
+    position: absolute;
+    top: 759px;
+    right: 338px;
+    bottom: 769px;
+    left: 40px;
+    width: 12px;
+    height: 12px;
+  }
+  .mob .info21 {
+    position: absolute;
+    top: 699px;
+    right: 252px;
+    bottom: 826px;
+    left: 60px;
+    width: 78px;
+    height: 15px;
+    font: 400 12px/1.25 "Inter", Helvetica, Arial, serif;
+    color: black;
+    text-align: justify;
+  }
+  .mob .info22 {
+    position: absolute;
+    top: 728px;
+    right: 238px;
+    bottom: 797px;
+    left: 61px;
+    width: 91px;
+    height: 15px;
+    font: 400 12px/1.25 "Inter", Helvetica, Arial, serif;
+    color: black;
+    text-align: justify;
+  }
+  .mob .info23 {
+    position: absolute;
+    top: 757px;
+    right: 157px;
+    bottom: 768px;
+    left: 60px;
+    width: 173px;
+    height: 15px;
+    font: 400 12px/1.25 "Inter", Helvetica, Arial, serif;
+    color: black;
+    text-align: justify;
+  }
+  .mob .rect4 {
+    position: absolute;
+    top: 792px;
+    right: 244px;
+    bottom: 716px;
+    left: 40px;
+    width: 106px;
+    height: 32px;
+    background-color: #dc3333;
+    border-radius: 16px 16px 16px 16px;
+  }
+  .mob .info12 {
+    position: absolute;
+    top: 801px;
+    right: 260.5px;
+    bottom: 725px;
+    left: 57.5px;
+    display: flex;
+    justify-content: center;
+    width: 72px;
+    height: 14px;
+    font: 500 12px/1.16 "Inter", Helvetica, Arial, serif;
+    color: white;
+    text-align: center;
+  }
+  .mob .rect21 {
+    position: absolute;
+    top: 877px;
+    right: 18px;
+    bottom: 93px;
+    left: 18px;
+    width: 354px;
+    height: 570px;
+    background-color: white;
+    border-radius: 25px 25px 25px 25px;
+    outline: 1px solid black;
+    outline-offset: -1px;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.2470588235);
+  }
+  .mob .image31 {
+    position: absolute;
+    top: 900px;
+    right: 40px;
+    bottom: 450px;
+    left: 40px;
+    width: 310px;
+    height: 190px;
+    outline: 1px solid rgba(0, 0, 0, 0.368);
+    outline-offset: -1px;
+  }
+  .mob .rect31 {
+    position: absolute;
+    top: 1104px;
+    right: 264px;
+    bottom: 414px;
+    left: 40px;
+    width: 86px;
+    height: 22px;
+    background-color: #4c67c6;
+  }
+  .mob .info13 {
+    position: absolute;
+    top: 1108px;
+    right: 270px;
+    bottom: 418px;
+    left: 44px;
+    width: 76px;
+    height: 14px;
+    font: 500 12px/1.16 "Inter", Helvetica, Arial, serif;
+    color: white;
+  }
+  .mob .subtitle1 {
+    position: absolute;
+    top: 1141px;
+    right: 114px;
+    bottom: 376px;
+    left: 40px;
+    width: 236px;
+    height: 23px;
+    font: 500 20px/1.14 "Inter", Helvetica, Arial, serif;
+    color: black;
+  }
+  .mob .desc11 {
+    position: absolute;
+    top: 1178px;
+    right: 40px;
+    bottom: 254px;
+    left: 40px;
+    width: 310px;
+    height: 108px;
+    font: 400 12px/1.5 "Inter", Helvetica, Arial, serif;
+    color: black;
+    text-align: justify;
+  }
+  .mob .image43 {
+    position: absolute;
+    top: 1302px;
+    right: 338px;
+    bottom: 226px;
+    left: 40px;
+    width: 12px;
+    height: 12px;
+  }
+  .mob .image44 {
+    position: absolute;
+    top: 1331px;
+    right: 337px;
+    bottom: 197px;
+    left: 41px;
+    width: 12px;
+    height: 12px;
+  }
+  .mob .image45 {
+    position: absolute;
+    top: 1360px;
+    right: 338px;
+    bottom: 168px;
+    left: 40px;
+    width: 12px;
+    height: 12px;
+  }
+  .mob .info24 {
+    position: absolute;
+    top: 1300px;
+    right: 252px;
+    bottom: 225px;
+    left: 60px;
+    width: 78px;
+    height: 15px;
+    font: 400 12px/1.25 "Inter", Helvetica, Arial, serif;
+    color: black;
+    text-align: justify;
+  }
+  .mob .info25 {
+    position: absolute;
+    top: 1329px;
+    right: 238px;
+    bottom: 196px;
+    left: 61px;
+    width: 91px;
+    height: 15px;
+    font: 400 12px/1.25 "Inter", Helvetica, Arial, serif;
+    color: black;
+    text-align: justify;
+  }
+  .mob .info26 {
+    position: absolute;
+    top: 1358px;
+    right: 157px;
+    bottom: 167px;
+    left: 60px;
+    width: 173px;
+    height: 15px;
+    font: 400 12px/1.25 "Inter", Helvetica, Arial, serif;
+    color: black;
+    text-align: justify;
+  }
+  .mob .rect41 {
+    position: absolute;
+    top: 1393px;
+    right: 244px;
+    bottom: 115px;
+    left: 40px;
+    width: 106px;
+    height: 32px;
+    background-color: #dc3333;
+    border-radius: 16px 16px 16px 16px;
+  }
+  .mob .info14 {
+    position: absolute;
+    top: 1402px;
+    right: 260.5px;
+    bottom: 124px;
+    left: 57.5px;
+    display: flex;
+    justify-content: center;
+    width: 72px;
+    height: 14px;
+    font: 500 12px/1.16 "Inter", Helvetica, Arial, serif;
+    color: white;
+    text-align: center;
+  }
+
+/*domestic*/
+
+/* Container for hover effect */
+.hover-container {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Initial state for the rectangles and text */
+.hover-container .rect2,
+.hover-container .rect3,
+.hover-container .rect4,
+.hover-container .info11,
+.hover-container .info12,
+.hover-container .info21,
+.hover-container .info22,
+.hover-container .info23,
+.hover-container .subtitle,
+.hover-container .desc1 {
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.hover-container:hover .rect2,
+.hover-container:hover .rect4 {
+  transform: scale(1.05);
+  background-color: #b42318; /* Change to the desired hover color */
+}
+
+.hover-container:hover .rect4 {
+  background-color: #ffffff; /* Change to white on hover */
+}
+
+.hover-container:hover .info11,
+.hover-container:hover .info21,
+.hover-container:hover .info22,
+.hover-container:hover .info23,
+.hover-container:hover .subtitle,
+.hover-container:hover .desc1 {
+  color: #ffffff; /* Change to white on hover */
+}
+
+.hover-container:hover .info12 {
+  color: #b42318; /* Change to red on hover */
+}
+
+/* Exclude the blue box from changing color */
+.hover-container .rect3 {
+  background-color: #4c67c6; /* Ensure the blue color remains the same */
+}
+
+/* Image hover effect */
+.hover-container:hover .image4,
+.hover-container:hover .image41,
+.hover-container:hover .image42 {
+  content: url('./assets/tick2.png'); /* Change image on hover */
+}
+
+
+/*international*/
+
+/* Container for hover effect */
+.hover-container {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Initial state for the rectangles and text */
+.hover-container .rect21,
+.hover-container .rect31,
+.hover-container .rect41,
+.hover-container .info13,
+.hover-container .info14,
+.hover-container .info24,
+.hover-container .info25,
+.hover-container .info26,
+.hover-container .subtitle1,
+.hover-container .desc11 {
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.hover-container:hover .rect21,
+.hover-container:hover .rect41 {
+  transform: scale(1.05);
+  background-color: #b42318; /* Change to the desired hover color */
+}
+
+.hover-container:hover .rect41 {
+  background-color: #ffffff; /* Change to white on hover */
+}
+
+.hover-container:hover .info13,
+.hover-container:hover .info24,
+.hover-container:hover .info25,
+.hover-container:hover .info26,
+.hover-container:hover .subtitle1,
+.hover-container:hover .desc11 {
+  color: #ffffff; /* Change to white on hover */
+}
+
+.hover-container:hover .info14 {
+  color: #b42318; /* Change to red on hover */
+}
+
+/* Exclude the blue box from changing color */
+.hover-container .rect31 {
+  background-color: #4c67c6; /* Ensure the blue color remains the same */
+}
+
+/* Image hover effect */
+.hover-container:hover .image43,
+.hover-container:hover .image44,
+.hover-container:hover .image45 {
+  content: url('./assets/tick2.png'); /* Change image on hover */
+}
