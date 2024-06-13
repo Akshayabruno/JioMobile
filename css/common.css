@@ -796,12 +796,6 @@ code {
   background-color: #4c67c6; /* Ensure the blue color remains the same */
 }
 
-/* Image hover effect */
-.hover-container:hover .image4,
-.hover-container:hover .image41,
-.hover-container:hover .image42 {
-  content: url('./assets/tick2.png'); /* Change image on hover */
-}
 
 
 /*international*/
@@ -856,9 +850,4 @@ code {
   background-color: #4c67c6; /* Ensure the blue color remains the same */
 }
 
-/* Image hover effect */
-.hover-container:hover .image43,
-.hover-container:hover .image44,
-.hover-container:hover .image45 {
-  content: url('./assets/tick2.png'); /* Change image on hover */
-}
+
