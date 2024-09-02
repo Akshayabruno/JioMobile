@@ -486,6 +486,17 @@ code {
     font: 500 20px/1.14 "Inter", Helvetica, Arial, serif;
     color: black;
   }
+.mob .subtitle1 {
+  position: absolute;
+  top: 540px; 
+  right: 144px; 
+  bottom: 977px; 
+  left: 40px; 
+  width: 206px; 
+  height: 23px; 
+  font: 500 20px/1.14 "Inter", Helvetica, Arial, serif;
+  color: black;
+}
   .mob .desc1 {
     position: absolute;
     top: 577px;
