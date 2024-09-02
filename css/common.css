@@ -475,7 +475,7 @@ code {
     font: 500 12px/1.16 "Inter", Helvetica, Arial, serif;
     color: white;
   }
-  .mob .subtitle {
+/*   .mob .subtitle {
     position: absolute;
     top: 540px;
     right: 144px;
@@ -485,15 +485,15 @@ code {
     height: 23px;
     font: 500 20px/1.14 "Inter", Helvetica, Arial, serif;
     color: black;
-  }
-.mob .subtitle1 {
+  } */ changed
+.mob .subtitle {
   position: absolute;
-  top: 540px; 
-  right: 144px; 
-  bottom: 977px; 
-  left: 40px; 
-  width: 206px; 
-  height: 23px; 
+  top: 1141px;
+  right: 114px;
+  bottom: 376px;
+  left: 40px;
+  width: 236px;
+  height: 23px;
   font: 500 20px/1.14 "Inter", Helvetica, Arial, serif;
   color: black;
 }
