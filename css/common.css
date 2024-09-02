@@ -488,6 +488,7 @@ code {
   } 
   .mob .desc1 {
     position: absolute;
+    margin-top: 9px;
     top: 577px;
     right: 40px;
     bottom: 855px;
