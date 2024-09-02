@@ -481,14 +481,13 @@ code {
     right: 144px;
     bottom: 977px;
     left: 40px;
-    width: 206px;
+    width: 500px;
     height: 23px;
     font: 500 20px/1.14 "Inter", Helvetica, Arial, serif;
     color: black;
   } 
   .mob .desc1 {
     position: absolute;
-    margin-top: 18px;
     top: 577px;
     right: 40px;
     bottom: 855px;
